@@ -19,8 +19,8 @@ public class PostmanEchoTest {
                 .post("/post")
 // Проверки
                 .then()
-                .statusCode(200)
-                .body("data", equalTo("Not important information"))
+                .statusCode(300)
+                .body("data", equalTo("important information"))
         ;
     }
 }
